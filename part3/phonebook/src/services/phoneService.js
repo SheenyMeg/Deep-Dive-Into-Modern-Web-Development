@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3003/persons/'
+const baseUrl = '/persons'
 
 const getAll = () => {
   const request =  axios.get(baseUrl)
@@ -12,12 +12,12 @@ const create = (nameObj) => {
 }
 
 const clear = (id) => {
-  const request = axios.delete(baseUrl + id)
+  const request = axios.delete(`${baseUrl}/${id}`)
   return request.then(response => response.data)
 }
 
 const replace = (id,changeObj) => {
-  const request = axios.put(baseUrl + id, changeObj)
+  const request = axios.put(`${baseUrl}/${id}`, changeObj)
   return request.then(response => response.data)
 }
 export default { getAll, create, clear, replace }
