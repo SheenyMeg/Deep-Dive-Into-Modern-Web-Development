@@ -1,0 +1,10 @@
+POST http://localhost:3003/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRmZ3F3ZSIsImlkIjoiNWYzMWM5MDczMTU4MTE3YjFjNzVkY2NhIiwiaWF0IjoxNTk3MjM5NTg3fQ.YjmQbDEbq1Rsn5hWHXXKzhip9d0XKI-jcgqZKXvg5TQ
+
+{
+    "title": "test login test3",
+    "author": "xiaohua",
+    "url": "https",
+    "likes": 2
+}
