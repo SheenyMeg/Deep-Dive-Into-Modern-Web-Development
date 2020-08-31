@@ -1,0 +1,10 @@
+POST http://localhost:3001/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZyb250IiwiaWQiOiI1ZjM3MjBiZTJjYzdlYTMyYzQ0OGRmMmQiLCJpYXQiOjE1OTc0NTI4NDF9.NkDVNwmonFXhbxsgp_LlK7KJnRnj8wQy2qeDf773gfA
+
+{
+    "title": "front blog list2",
+    "author": "zhaochen",
+    "url": "https://",
+    "likes": 2
+}
