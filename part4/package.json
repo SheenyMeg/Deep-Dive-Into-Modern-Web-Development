@@ -23,9 +23,9 @@
     "url": "https://github.com/SheenyMeg/Deep-Dive-Into-Modern-Web-Development/issues"
   },
   "homepage": "https://github.com/SheenyMeg/Deep-Dive-Into-Modern-Web-Development#readme",
-
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "bl": "^4.0.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

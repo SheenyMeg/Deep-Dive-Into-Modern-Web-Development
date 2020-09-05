@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/SheenyMeg/DDIMWD_PART3#readme",
   "dependencies": {
+    "bl": "^4.0.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "eslint": "^6.6.0",
