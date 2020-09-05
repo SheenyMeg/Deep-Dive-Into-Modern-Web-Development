@@ -18,7 +18,10 @@ export const showNotify = (showInfo, time) => {
             type: 'SHOW_NOTIFY',
             showInfo
         })
-        clearTimeout(timeOut)
+
+        if (timeOut) {
+            clearTimeout(timeOut)
+        }
 
         timeOut = setTimeout(() => {
             dispatch ({

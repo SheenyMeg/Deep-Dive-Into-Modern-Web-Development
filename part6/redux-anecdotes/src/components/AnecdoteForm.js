@@ -12,8 +12,8 @@ const AnecdoteForm = (props) => {
     //     event.preventDefault()
     //     const anecdote = event.target.anecdote.value
     //     event.target.anecdote.value = ''
-        
-    //     dispatch(createAnec(anecdote))
+
+    //     dispatch( createAnec(anecdote) )
 
     //     dispatch( showNotify(`You add '${anecdote}'`, 5) )
     // }
@@ -22,18 +22,18 @@ const AnecdoteForm = (props) => {
         event.preventDefault()
         const anecdote = event.target.anecdote.value
         event.target.anecdote.value = ''
-        
+
         props.createAnec(anecdote)
 
         props.showNotify(`You add '${anecdote}'`, 5)
     }
-    
+
     return (
-        <div> 
+        <div>
             <h2>create new</h2>
             <form onSubmit={addNew}>
                 <div>
-                <input name='anecdote' />
+                    <input name='anecdote' />
                 </div>
                 <button type='submit'>create</button>
             </form>
@@ -47,6 +47,6 @@ const mapDispatchToProps = {
 }
 
 export default connect(
-    null, 
+    null,
     mapDispatchToProps
 )(AnecdoteForm)

@@ -1,19 +1,21 @@
-// const filterReducer = ( state = [], action ) => {
-//     console.log('Filter_Action', action)
-//     console.log('filter_state', state)
-//     switch (action.type) {
-//         case 'FILTER':
-//             return state = action.filterResult
-//         default:
-//             return state
-//     }
-// }
+const filterReducer = ( state = '', action ) => {
+    console.log('Filter_Action', action)
 
-// export const filter = (filterResult) => {
-//     return {
-//         type: 'FILTER',
-//         filterResult
-//     }
-// }
+    switch (action.type) {
+    case 'FILTER':
+        return action.content
+    default:
+        return state
+    }
+}
 
-// export default filterReducer
+export const setFilter = (content) => {
+    return async dispatch => {
+        dispatch({
+            type: 'FILTER',
+            content
+        })
+    }
+}
+
+export default filterReducer
